@@ -2,6 +2,7 @@
     font-family: "Poppins";
     margin: 0;
     padding: 0;
+    margin-right: 0px;
 }
 .nav-bar{
     display: flex;
@@ -148,10 +149,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: lightgrey;
-    height: 150px;
+    height: fit-content;
     border-radius: 5px;
-    padding:10px;
-    
+    padding: 10px;
+    gap: 10px;
 }
 .new-arrival{
     display: flex;
@@ -238,6 +239,65 @@
         transition: all ease-in-out 0.2s;
         transform: scale(1.051);
       }
+.contacts {
+  background-color: rgb(51, 53, 62);
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 15px;
+  padding: 40px 0;
+}
+
+.contact h2 {
+  color: white;
+  font-size: xx-large;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.contact label {
+  color: white;
+  font-size: large;
+  padding-left: 50px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact input,
+.contact textarea {
+  font-size: large;
+  margin-left: 50px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact button {
+  background-color: rgb(39, 102, 171);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: large;
+  margin-left: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: rgb(25, 85, 150);
+  transform: scale(1.05);
+}
+
 
 
 
@@ -296,9 +356,11 @@
     }
 
     .new-arrival-con img{
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
+        width: 130px;
+        height: 130px;
+        object-fit:cover;
+        border-radius: 20px;
+        margin: 3px ;
     }
 
     .news input{
@@ -308,10 +370,39 @@
         padding: 12px;
         border: 2px solid black;
     }
+    
+    
+    .new-arrival-con button{
+    
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(4, 4, 4);
+    border:1px solid rgb(2, 2, 2);
+    transition: all 0.3s;
+}
+.new-arrival-con p{
+    display: none;
+}
+.contact h2,
+  .contact label,
+  .contact input,
+  .contact textarea,
+  .contact button {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
 
-    .contacts{
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-    }
+  .contact input,
+  .contact textarea {
+    width: 90%;
+  }
+  .search{
+    width: 80%;
+    margin-left: 10px;
+  }
 }
