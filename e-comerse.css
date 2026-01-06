@@ -172,10 +172,10 @@
      position: relative;
 }
 .new-arrival-con img{
-    height: 300px;
+   height: 300px;
     width: 220px;
-   border-radius: 20px;
-   
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(22, 22, 27);
 }
 .new-arrival-con button{
     
@@ -385,6 +385,7 @@
     background-color: rgb(4, 4, 4);
     border:1px solid rgb(2, 2, 2);
     transition: all 0.3s;
+    box-shadow: 4px 4px 10px rgb(22, 22, 27);
 }
 .new-arrival-con p{
     display: none;
@@ -407,4 +408,5 @@
     margin-left: 10px;
   }
 }
+
 
