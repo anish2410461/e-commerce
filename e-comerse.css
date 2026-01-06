@@ -150,6 +150,7 @@
     background-color: lightgrey;
     height: 150px;
     border-radius: 5px;
+    padding:10px;
     
 }
 .new-arrival{
@@ -240,69 +241,77 @@
 
 
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
+
     .menu{
-        display: block;
         display: flex;
         align-items: center;
         padding: 10px;
         transition: all 0.4s;
-        font-size: x-large;
+        font-size: 1.5rem;
+        cursor: pointer;
     }
+
     .menu:hover{
         color: rgb(4, 80, 167);
-    transform: scale(1.2);
+        transform: scale(1.1);
     }
+
     .menu:active{
-        transform: scale(0.5);
+        transform: scale(0.95);
     }
+
     .nav-link{
         display: none;
     }
+
     .content-text{
-    margin-top: 0px;
+        margin-top: 0;
+        text-align: center;
     }
+
     .content img{
-    margin-top:40px ;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-
+        margin-top: 40px;
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
     }
-    .serivce h2{
-   margin-left: 80px;
-    text-align: center;
-}
 
-    .serivce p{
-   margin-left: 40px;
-    text-align: center;}
- .specialitize{
-    display:flex;
-    margin: 20px;
-    justify-content:center;
-    align-items: center;
-    background-color: lightgrey;
-    height: 350px;
-    border-radius: 5px;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    padding: 10px;
-} 
-.new-arrival-con img{
-    height: 200px;
-    width: 200px;
-   
-}
-.news input{
-    margin-top: 30px;
-    width: 400px;
-    padding-top: 20px;
-    border: 2px solid black;
-}
-.contacts{
-    
-    width: 400px;
-}
+    .service h2,
+    .service p{
+        margin-left: 0;
+        text-align: center;
+    }
 
+    .specialitize{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey;
+        min-height: 350px;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .new-arrival-con img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .news input{
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+        padding: 12px;
+        border: 2px solid black;
+    }
+
+    .contacts{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
 }
