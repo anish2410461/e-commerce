@@ -275,6 +275,7 @@
   border-radius: 10px;
   border: none;
   outline: none;
+    
 }
 
 .contact textarea {
@@ -408,5 +409,6 @@
     margin-left: 10px;
   }
 }
+
 
 
